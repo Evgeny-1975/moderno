@@ -11,7 +11,8 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "mixitup": "^3.3.1"
   },
   "dependencies": {
     "browser-sync": "^2.26.7",
