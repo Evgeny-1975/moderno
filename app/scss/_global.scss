@@ -8,6 +8,16 @@ html {
    box-sizing: inherit;
 }
 
+@mixin f500 {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+}
+
+@mixin f700 {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+}
+
 a {
    display: inline-block;
    text-decoration: none;
@@ -49,7 +59,7 @@ body {
 
 .title {
    color: $bg;
-   font-weight: 700;
+   @include f700;
    font-size: 36px;
    line-height: 60px;
    text-align: center;
