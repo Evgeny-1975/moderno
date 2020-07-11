@@ -1,5 +1,5 @@
 $(function () {
-   
+
    $(".rate-star").rateYo({
       rating: 5,
       readOnly: true,
@@ -11,12 +11,20 @@ $(function () {
       slidesToScroll: 4,
       dots: true,
       arrows: false,
-   //autoplay: true,
-   //autoplaySpeed: 2000
+      //autoplay: true,
+      //autoplaySpeed: 2000
    });
 
- var mixer = mixitup('.products__inner-box');
+   $(".js-range-slider").ionRangeSlider({
+      type: "double",
+      min: 0,
+      max: 1000,
+      from: 0,
+      to: 600,
+      prefix: "$"
+   });
+
+   var mixer = mixitup('.products__inner-box');
 
 
 });
-
