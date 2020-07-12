@@ -24,6 +24,18 @@ $(function () {
       prefix: "$"
    });
 
+
+   $('.icon-th-list').on('click', function(){
+      $('.products__item').addClass('list');
+      $('.icon-th-list').addClass('activ');
+      $('.icon-th-large').removeClass('activ');
+   });
+   $('.icon-th-large').on('click', function(){
+      $('.products__item').removeClass('list');
+      $('.icon-th-large').addClass('activ');
+      $('.icon-th-list').removeClass('activ');
+   });
+
    var mixer = mixitup('.products__inner-box');
 
 
