@@ -62,20 +62,17 @@
       font-size: 14px;
    }
 }
-
 .header__circle {
-   &.active {
-      display: block;
+   &.active{
+      display: block ;
    }
-
    display: none;
    width: 34px;
    height: 34px;
    border-radius: 50%;
    background-color: #f5f5f5;
    position: relative;
-
-   &::before {
+   &::before{
       position: absolute;
       top: 50%;
       left: 50%;
@@ -83,11 +80,10 @@
       color: #a0a0a0;
       font-size: 14px;
    }
-
    //&+.header__circle{
    //   margin-left: 15px;
    //}
-   span {
+   span{
       position: absolute;
       width: 18px;
       height: 18px;
@@ -100,49 +96,40 @@
       font-size: 11px;
    }
 }
-
-.header__box {
+.header__box{
    display: flex;
    align-items: center;
 }
-
-.notification {
-   span {
+.notification{
+   span{
       background-color: $yellow;
    }
 }
-
-.message {
-   span {
+.message{
+   span{
       background-color: $orang;
    }
 }
-
-.basket {
-   span {
-      background-color: $green;
+.basket{
+   span{
+      background-color: $green;      
    }
 }
-
-.header__btn-login--off {
+.header__btn-login--off{
    display: none;
 }
-
-.header__btn-logout {
+.header__btn-logout{
    display: none;
-
-   &.header__btn-login--on {
+   &.header__btn-login--on{
       display: block;
    }
 }
-
-.user {
+.user{   
    margin-right: 25px;
    margin-left: 20px;
    padding-right: 20px;
    position: relative;
-
-   &::before {
+   &::before{
       content: '\f107';
       position: absolute;
       font-family: 'icomoon';
@@ -151,36 +138,30 @@
       top: 0;
       right: 0;
    }
-
-   &__inner {
-      display: flex;
-      align-items: center;
+   &__inner{
+   display: flex;
+   align-items: center;
+}
+   &__images{
+   margin-right: 15px;
+   width: 34px;
+   height: 34px;
+   overflow: hidden;
+   border-radius: 50%;
    }
-
-   &__images {
-      margin-right: 15px;
-      width: 34px;
-      height: 34px;
-      overflow: hidden;
-      border-radius: 50%;
+   &__info{
+   font-size: 14px;
+   line-height: 24px;
    }
-
-   &__info {
-      font-size: 14px;
-      line-height: 24px;
+   &__name{
+   @include f500;
+   color: #222;
    }
-
-   &__name {
-      @include f500;
-      color: #222;
-   }
-
-   &__money {
-      color: $green;
-      @include f700;
+   &__money{
+   color:$green;
+   @include f700;
    }
 }
-
 //user menu
 .user__box,
 .basket__box,
@@ -189,8 +170,7 @@
    position: relative;
    height: 90px;
    margin-top: 40px;
-
-   &:hover {
+   &:hover{
       .user__menu {
          height: auto;
          border-width: 1px;
@@ -199,8 +179,7 @@
       }
    }
 }
-
-.user__menu {
+.user__menu{
    border: 0px solid #ccc;
    position: absolute;
    background-color: #fff;
@@ -211,51 +190,45 @@
    transition: all .3s;
    height: 0;
    overflow: hidden;
-
-   a {
-      color: $color-text;
-      font-size: 12px;
-      @include f500;
-      margin-bottom: 15px;
+   a{
+   color: $color-text;
+   font-size: 12px;
+   @include f500;
+   margin-bottom: 15px;
    }
 }
-
 //basket menu
 
 .circle__menu {
    position: absolute;
    border-top: 1px solid #e0e0e0;
    top: 62px;
-   right: 0;
+   right: 0;   
    height: 0;
    overflow: hidden;
    transition: all .3s;
    background-color: #fff;
+   z-index: 1;
 }
-
 .basket__box,
 .notification__box,
 .message__box {
    margin-top: 54px;
    margin-left: 15px;
-
    &:hover {
-      .header__circle::before {
+      .header__circle::before{
          color: $bg;
       }
-
       .circle__menu {
          overflow: hidden;
          height: auto;
       }
-
-      .circle__item {
+      .circle__item{
          padding: 23px 23px;
          border-width: 1px;
       }
    }
 }
-
 .circle__item {
    border: 0px solid #e0e0e0;
    background-color: #fff;
@@ -268,8 +241,7 @@
    width: 269px;
    position: relative;
    transition: all .3s;
-
-   &::before {
+   &::before{
       position: absolute;
       top: 27px;
       right: 28px;
@@ -277,40 +249,33 @@
       font-size: 16px;
    }
 }
-
 .circle__images {
    margin-right: 15px;
 }
-
 .circle__info-name {
    color: $bg;
    @include f500;
 }
-
 .circle__info-thema {
    color: $green;
 }
-
 .circle__info-price {
    color: #000;
    @include f500;
    font-size: 16px;
 }
-
-.circle__info-date {
+.circle__info-date{
    color: #90a4ae;
    font-size: 10px;
    @include f500;
 }
-
 .basket__summ {
    background-color: #fff;
    padding: 16px 17px 12px;
    border: 1px solid #e0e0e0;
    border-top: none;
 }
-
-.basket__title {
+.basket__title{
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -321,45 +286,40 @@
    font-style: 16px;
    color: $bg;
 }
-
-.basket__btn {
+.basket__btn{
    color: #fff;
    @include f700;
    font-size: 14px;
    padding: 15px 5px;
-   background-color: $green;
+   background-color: $green; 
    text-align: center;
    width: 100px;
 }
-
-.basket__btn-checkout {
+.basket__btn-checkout{
    width: 122px;
    margin-left: 6px;
    background-color: #e85647;
 }
-
 .notification__menu,
-.message__menu {
-   .circle__images {
+.message__menu{
+   .circle__images{
       margin-right: 20px;
       width: 48px;
       height: 48px;
-      border-radius: 50%;
+      border-radius: 50%;  
    }
 }
-
-.circle__info {
+.circle__info{
    line-height: 18px;
 }
-
-.icons-color::before {
+.icons-color::before{
    color: $orang;
 }
 
-.header__btn-menu {
+.header__btn-menu,
+.menu__btn {
    display: none;
 }
-
 //END HEADER
 
 //START SEARCH
@@ -1311,7 +1271,6 @@ button.icon-sort-amount-desc {
 .products__item-list {
    //Выключаем текст на маленьких itemah
    display: none;
-
    .icon-comment-o,
    .icon-heart-o {
       display: inline-block;
@@ -1320,30 +1279,26 @@ button.icon-sort-amount-desc {
       padding-left: 50px;
       border-left: 1px solid #aeb4bb;
       position: relative;
-
-      span {
-         @include f500;
-         color: $bg;
+      span{
+      @include f500;
+      color: $bg;
+         }
+         &::before{
+            position: absolute;
+            font-size: 16px;
+            color: $green;
+            left: 20px;
+            top: 0;
+         }
       }
-
-      &::before {
-         position: absolute;
-         font-size: 16px;
-         color: $green;
-         left: 20px;
-         top: 0;
-      }
-   }
-
-   .icon-comment-o {
-      padding-right: 30px;
-
-      &::before {
-         position: absolute;
-         top: -2px;
+      .icon-comment-o{
+         padding-right: 30px;
+         &::before{
+            position: absolute;
+            top: -2px;
+         }
       }
    }
-}
 
 
 .products__item {
@@ -1387,12 +1342,10 @@ button.icon-sort-amount-desc {
       .products__item-content {
          padding-top: 23px;
       }
-
-      .products__item-list {
+      .products__item-list{
          display: block;
       }
-
-      .products__item-star {
+      .products__item-star{
          margin-left: auto;
          margin-right: 30px;
       }
@@ -1400,6 +1353,5 @@ button.icon-sort-amount-desc {
 }
 
 //END PRODUCT-PAGE
-
 
 @import 'media';
