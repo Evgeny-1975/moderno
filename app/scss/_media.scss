@@ -45,8 +45,7 @@
       right: 0;
       z-index: 1;
       text-align: center;
-      padding-bottom: 30px;
-
+      
       a {
          display: block;
          padding: 10px 0;
@@ -120,7 +119,7 @@
    .menu__list {
       top: 70px;
    }
-}
+
 
 .header__btn-menu {
    width: 70px;
@@ -143,16 +142,16 @@
 
 .header__box {
    transition: all .5s;
-   background-color: $grey;
+   background-color: #fff;
    height: 70px;
    z-index: 2;
+   position: absolute;
+   left: 100%;
+   right: -100%;
 
    &.active {
       left: 70px;
-      right: 50px;
-      //position: absolute;
-      left: 100%;
-      right: -100%;
+      right: 90px;     
    }
 }
 
@@ -179,6 +178,7 @@
 
 .circle__menu {
    top: 52px;
+}
 }
 
 @media (max-width: 495px) {
